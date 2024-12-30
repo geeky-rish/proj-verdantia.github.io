@@ -16,3 +16,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+        hamburger.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('nav a').forEach(n => n.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+        hamburger.classList.remove('active');
+    }));
+});

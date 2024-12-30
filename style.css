@@ -163,13 +163,39 @@ blockquote {
 }
 
 @media (max-width: 768px) {
+    nav {
+        padding: 0.5rem;
+    }
     nav ul {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-secondary);
+        padding: 1rem;
+    }
+
+    nav ul.show {
+        display: flex;
     }
 
     nav ul li {
         margin: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: var(--text-primary);
+        margin: 5px 0;
+        transition: all 0.3s ease;
     }
 
     h1 {
@@ -178,6 +204,39 @@ blockquote {
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .team-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .team-members {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
     }
 }
 
