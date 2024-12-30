@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAA Lab Reflections</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reflections_th.html">Theory Reflections</a></li>
+            <li><a href="reflections.html">Lab Reflections</a></li>
+            
+        </ul>
+    </nav>
+
+
+    <main class="reflections">
+        <h1>DAA Lab Reflections</h1>
+
+        <section>
+            <h2>Key Concepts in Algorithms</h2>
+
+            <div class="reflection-item">
+                <h3>1. Time Complexity Analysis</h3>
+                <p>Understanding time complexity involves analyzing how an algorithm's performance changes as the input size grows. It is measured using Big-O, Big-Theta, and Big-Omega notations. Concepts like solving recurrence relations and applying the Master Theorem are integral to mastering this topic.</p>
+                <img src="placeholder-time-complexity.jpg" alt="Time Complexity Analysis Code" class="code-screenshot">
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>2. Binary Search Tree (BST)</h3>
+                <p>A binary search tree is a hierarchical structure where each node has at most two children. It maintains ordered data, enabling efficient operations like search, insertion, and deletion. Its self-balancing variants, like AVL and Red-Black trees, ensure optimal performance.</p>
+                <img src="placeholder-bst.jpg" alt="Binary Search Tree Code" class="code-screenshot">
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>3. Depth-First Search (DFS) and Breadth-First Search (BFS)</h3>
+                <p>DFS explores as far as possible along a branch before backtracking, making it suitable for tasks like cycle detection. BFS explores all neighbors at the current depth before moving to the next, making it ideal for finding the shortest path in unweighted graphs.</p>
+                <img src="placeholder-dfs-bfs.jpg" alt="DFS and BFS Code" class="code-screenshot">
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>4. Heap</h3>
+                <p>Heaps are specialized tree-based data structures used to implement priority queues. Min-heaps and max-heaps maintain specific order properties, and heap operations like insertion and deletion rely on the heapification process to maintain this order.</p>
+                <img src="placeholder-heap.jpg" alt="Heap Code" class="code-screenshot">
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>5. Sorting Algorithms</h3>
+                <p>Sorting algorithms organize data in a specific order. Simple algorithms like bubble sort and insertion sort are easier to understand but inefficient. Advanced algorithms like merge sort (divide-and-conquer) and quicksort (pivoting) are faster for larger datasets.</p>
+                <img src="placeholder-sorting.jpg" alt="Sorting Algorithms Code" class="code-screenshot">
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>6. Pattern Searching</h3>
+                <p>Pattern searching involves finding occurrences of a pattern in a text. Algorithms like KMP use preprocessing to avoid redundant comparisons, while Boyer-Moore employs heuristics like bad character and good suffix for efficient searching.</p>
+                <img src="placeholder-pattern-search.jpg" alt="Pattern Searching Code" class="code-screenshot">
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>7. Graph Algorithms</h3>
+                <p>Graph algorithms like Kruskal's and Prim's are used to find minimum spanning trees. Dijkstra's and Bellman-Ford help find shortest paths, while Floyd-Warshall computes all-pairs shortest paths. These are foundational for network analysis and optimization tasks.</p>
+                <img src="placeholder-graph-algorithms.jpg" alt="Graph Algorithms Code" class="code-screenshot">
+            </div>
+        </section>
+
+        <section>
+            <h2>Challenges in Learning/Understanding</h2>
+            <ul>
+                <li><strong>1. Time Complexity Analysis:</strong> Difficulties included solving recurrence relations and applying asymptotic notations effectively.</li>
+                <li><strong>2. Binary Search Tree:</strong> Easier due to prior knowledge of linked lists and other data structures.</li>
+                <li><strong>3. DFS and BFS:</strong> Straightforward but required careful handling of recursion stacks (DFS) and queues (BFS).</li>
+                <li><strong>4. Heap:</strong> Concepts like heapification and parental dominance were challenging initially.</li>
+                <li><strong>5. Sorting Algorithms:</strong> Visualization helped with basic sorts; advanced algorithms required more effort to understand.</li>
+                <li><strong>6. Pattern Searching:</strong> Algorithms like Boyer-Moore were harder due to the need for additional preprocessing steps.</li>
+                <li><strong>7. Graph Algorithms:</strong> Kruskal's was confusing initially due to its reliance on sorting and union-find.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Challenges in Correlating with Real-World Applications</h2>
+            <ul>
+                <li><strong>1. Time Complexity Analysis:</strong> Once understood, its role in evaluating software performance became clear.</li>
+                <li><strong>2. Binary Search Tree:</strong> Applications in database indexing and search operations were logical and easy to grasp.</li>
+                <li><strong>3. DFS and BFS:</strong> Harder to visualize in real-world networks compared to simple graph representations.</li>
+                <li><strong>4. Heap:</strong> Its role in priority queues and scheduling systems highlighted its practical importance.</li>
+                <li><strong>5. Sorting Algorithms:</strong> Ubiquitous in software systems, from data organization to UI interactions.</li>
+                <li><strong>6. Pattern Searching:</strong> Essential in text editors, search engines, and computational biology.</li>
+                <li><strong>7. Graph Algorithms:</strong> Applications in navigation systems, network design, and social network analysis were evident.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How to Determine the Most Efficient Approach</h2>
+            <ul>
+                <li>1. Analyze input size, constraints, and problem requirements.</li>
+                <li>2. Choose appropriate data structures based on problem needs (e.g., heaps for priority tasks).</li>
+                <li>3. Select algorithms with optimal time and space complexity for the given scenario.</li>
+                <li>4. Consider problem characteristics, such as graph density or text repetitiveness.</li>
+                <li>5. Iteratively optimize the solution by testing on edge cases and refining implementation.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rishi Kulkarni. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
