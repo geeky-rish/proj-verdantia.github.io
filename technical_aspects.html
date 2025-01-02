@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Aspects - Railway Network Optimization</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .technical-aspects {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .technical-aspects h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--accent);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .technical-aspects section {
+            background-color: var(--bg-secondary);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .technical-aspects h2 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .technical-aspects table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+        
+        .technical-aspects th, .technical-aspects td {
+            border: 1px solid var(--text-secondary);
+            padding: 0.5rem;
+            text-align: left;
+        }
+        
+        .technical-aspects th {
+            background-color: rgba(255, 255, 255, 0.05);
+            font-weight: bold;
+        }
+        
+        .code-block pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        @media (max-width: 768px) {
+            .technical-aspects {
+                padding: 1rem;
+            }
+            
+            .technical-aspects section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="city_blueprint.html">City Blueprint</a></li>
+            <li><a href="technical_aspects.html">Technical Aspects</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="budget.html">Budget</a></li>
+        </ul>
+    </nav>
+
+    <main class="technical-aspects">
+        <h1>Technical Aspects of Railway Network Optimization</h1>
+
+        <section>
+            <h2>Time and Space Complexity Analysis</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Algorithm</th>
+                        <th>Time Complexity</th>
+                        <th>Space Complexity</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dijkstra's Algorithm (Improved Supply Chain Network)</td>
+                        <td>O(V^2) using adjacency matrix, O((V+E)logV) with min-heap</td>
+                        <td>O(V+E)</td>
+                        <td>Improved Supply Chain Network, Fare Calculation for Passengers</td>
+                    </tr>
+                    <tr>
+                        <td>Hash Tables (Enhancement of Security)</td>
+                        <td>O(1) average case, O(n) worst case</td>
+                        <td>O(n)</td>
+                        <td>Enhancement of Security</td>
+                    </tr>
+                    <tr>
+                        <td>Kruskal's Algorithm (Route Planning)</td>
+                        <td>O(ElogV)</td>
+                        <td>O(E+V)</td>
+                        <td>Route Planning</td>
+                    </tr>
+                    <tr>
+                        <td>Prim's Algorithm (Route Planning)</td>
+                        <td>O((V+E)logV)</td>
+                        <td>O(V+E)</td>
+                        <td>Route Planning</td>
+                    </tr>
+                    <tr>
+                        <td>Sorting (Scheduling of Trains)</td>
+                        <td>O(nlogn)</td>
+                        <td>O(n) for Merge Sort, O(logn) for Quick Sort</td>
+                        <td>Scheduling of Trains</td>
+                    </tr>
+                    <tr>
+                        <td>Brute Force String Search (Lost and Found Department)</td>
+                        <td>O(nm)</td>
+                        <td>O(1)</td>
+                        <td>Lost and Found Department</td>
+                    </tr>
+                    <tr>
+                        <td>File Management System (Lost and Found Department)</td>
+                        <td>O(n)</td>
+                        <td>O(n)</td>
+                        <td>Lost and Found Department</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
+
+
+        <section>
+            <h2>Performance Considerations</h2>
+            <ul>
+                <li><strong>1. Caching:</strong> Implement caching mechanisms for frequently accessed data, such as popular routes or passenger information.</li>
+                <li><strong>2. Database Indexing:</strong> Optimize database queries by creating appropriate indexes on frequently searched fields.</li>
+                <li><strong>3. Load Balancing:</strong> Distribute the workload across multiple servers to handle high traffic during peak booking times.</li>
+                <li><strong>4. Asynchronous Processing:</strong> Use message queues for non-real-time tasks to improve system responsiveness.</li>
+                <li><strong>5. Data Compression:</strong> Compress data for storage and transmission to reduce bandwidth usage and improve response times.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Scalability Considerations</h2>
+            <ul>
+                <li><strong>1. Microservices Architecture:</strong> Design the system as a collection of loosely coupled services for easier scaling and maintenance.</li>
+                <li><strong>2. Horizontal Scaling:</strong> Add more servers to the system to handle increased load, especially for computationally intensive tasks like route optimization.</li>
+                <li><strong>3. Database Sharding:</strong> Partition the database to distribute data across multiple servers, improving query performance for large datasets.</li>
+                <li><strong>4. Content Delivery Network (CDN):</strong> Use a CDN to serve static assets and reduce latency for users across different geographical locations.</li>
+                <li><strong>5. Elastic Computing:</strong> Implement auto-scaling to dynamically adjust resources based on current demand, ensuring efficient resource utilization.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Verdantia City Plan Committee. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
+

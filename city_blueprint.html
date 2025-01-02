@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Blueprint - Verdantia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .blueprint {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .blueprint section {
+            background-color: var(--bg-secondary);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blueprint h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--accent);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blueprint h2 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-container {
+            width: 100%;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .matrix-container {
+            overflow-x: auto;
+            margin-top: 2rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .matrix-table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 1000px;
+            font-size: 0.8rem;
+        }
+        
+        .matrix-table th, .matrix-table td {
+            border: 1px solid var(--text-secondary);
+            padding: 0.5rem;
+            text-align: center;
+        }
+        
+        .matrix-table th {
+            background-color: var(--bg-secondary);
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .matrix-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+        
+        .matrix-table td:first-child, .matrix-table th:first-child {
+            position: sticky;
+            left: 0;
+            background-color: var(--bg-secondary);
+            z-index: 20;
+        }
+        
+        .matrix-table td:first-child {
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .blueprint {
+                padding: 1rem;
+            }
+            
+            .blueprint section {
+                padding: 1rem;
+            }
+            
+            .matrix-table {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="city_blueprint.html">City Blueprint</a></li>
+            <li><a href="technical_aspects.html">Technical Aspects</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="budget.html">Budget</a></li>
+            
+        </ul>
+    </nav>
+
+    <main class="blueprint">
+        <h1>Verdantia City Blueprint</h1>
+
+        <section>
+            <h2>City Plan</h2>
+            <div class="image-container">
+                <img src="https://i.ibb.co/s2wj5qm/verdantia-page-0001.jpg" alt="Vandhya City Plan Blueprint">
+            </div>
+        </section>
+
+        <section>
+            <h2>Railway Network</h2>
+            <div class="image-container">
+                <img src="https://i.ibb.co/zJ2j2zN/railway-network.jpg" alt="Vandhya Railway Network Map">
+            </div>
+        </section>
+
+        <section>
+            <h2>Railway Network Distance Matrix</h2>
+            <p>Distance between stations in kilometers</p>
+            <div class="matrix-container">
+                <table class="matrix-table">
+                    <tr>
+                        <th>Node</th>
+                        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                        <th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th>
+                        <th>21</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th>
+                    </tr>
+                    <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>3</td><td>2.5</td><td>3</td><td>2.5</td><td>4.5</td><td>4.5</td><td>4.5</td><td>4.5</td><td>6.5</td><td>7.5</td><td>6.5</td><td>7.5</td><td>9.5</td><td>12.5</td><td>9.5</td><td>14.5</td><td>16.5</td><td>11.5</td><td>18.5</td><td>15.5</td><td>20.5</td><td>26.5</td></tr>
+                    <tr><td>2</td><td>1</td><td>0</td><td>2</td><td>2</td><td>2</td><td>2</td><td>3.5</td><td>4</td><td>3.5</td><td>3.5</td><td>5.5</td><td>5.5</td><td>5.5</td><td>5.5</td><td>8.5</td><td>7.5</td><td>8.5</td><td>8.5</td><td>13.5</td><td>10.5</td><td>13.5</td><td>17.5</td><td>12.5</td><td>17.5</td><td>16.5</td><td>21.5</td><td>27.5</td></tr>
+                    <tr><td>3</td><td>1</td><td>2</td><td>0</td><td>2</td><td>2</td><td>2</td><td>1.5</td><td>4</td><td>3.5</td><td>5.5</td><td>3.5</td><td>5.5</td><td>5.5</td><td>7.5</td><td>6.5</td><td>7.5</td><td>8.5</td><td>10.5</td><td>11.5</td><td>10.5</td><td>15.5</td><td>15.5</td><td>12.5</td><td>19.5</td><td>16.5</td><td>21.5</td><td>27.5</td></tr>
+                    <tr><td>4</td><td>1</td><td>2</td><td>2</td><td>0</td><td>2</td><td>4</td><td>3.5</td><td>2</td><td>3.5</td><td>5.5</td><td>5.5</td><td>3.5</td><td>5.5</td><td>7.5</td><td>8.5</td><td>5.5</td><td>8.5</td><td>10.5</td><td>13.5</td><td>8.5</td><td>15.5</td><td>17.5</td><td>10.5</td><td>19.5</td><td>14.5</td><td>19.5</td><td>25.5</td></tr>
+                    <tr><td>5</td><td>1</td><td>2</td><td>2</td><td>2</td><td>0</td><td>4</td><td>3.5</td><td>4</td><td>1.5</td><td>5.5</td><td>5.5</td><td>5.5</td><td>3.5</td><td>7.5</td><td>8.5</td><td>7.5</td><td>6.5</td><td>10.5</td><td>13.5</td><td>10.5</td><td>15.5</td><td>17.5</td><td>12.5</td><td>19.5</td><td>16.5</td><td>21.5</td><td>27.5</td></tr>
+                    <tr><td>6</td><td>3</td><td>2</td><td>2</td><td>4</td><td>4</td><td>0</td><td>5.5</td><td>6</td><td>5.5</td><td>1.5</td><td>7.5</td><td>7.5</td><td>7.5</td><td>3.5</td><td>10.5</td><td>9.5</td><td>10.5</td><td>6.5</td><td>15.5</td><td>12.5</td><td>11.5</td><td>19.5</td><td>14.5</td><td>15.5</td><td>18.5</td><td>23.5</td><td>29.5</td></tr>
+                    <tr><td>7</td><td>2.5</td><td>3.5</td><td>1.5</td><td>3.5</td><td>3.5</td><td>5.5</td><td>0</td><td>5.5</td><td>5</td><td>7</td><td>2</td><td>7</td><td>7</td><td>9</td><td>5</td><td>9</td><td>10</td><td>12</td><td>10</td><td>12</td><td>17</td><td>14</td><td>14</td><td>21</td><td>18</td><td>23</td><td>29</td></tr>
+                    <tr><td>8</td><td>3</td><td>4</td><td>4</td><td>2</td><td>4</td><td>6</td><td>5.5</td><td>0</td><td>5.5</td><td>7.5</td><td>7.5</td><td>1.5</td><td>7.5</td><td>9.5</td><td>10.5</td><td>3.5</td><td>10.5</td><td>12.5</td><td>15.5</td><td>6.5</td><td>17.5</td><td>19.5</td><td>8.5</td><td>21.5</td><td>12.5</td><td>17.5</td><td>23.5</td></tr>
+                    <tr><td>9</td><td>2.5</td><td>3.5</td><td>3.5</td><td>3.5</td><td>1.5</td><td>5.5</td><td>5</td><td>5.5</td><td>0</td><td>7</td><td>7</td><td>7</td><td>2</td><td>9</td><td>10</td><td>9</td><td>5</td><td>12</td><td>15</td><td>12</td><td>17</td><td>19</td><td>14</td><td>21</td><td>18</td><td>23</td><td>29</td></tr>
+                    <tr><td>10</td><td>4.5</td><td>3.5</td><td>5.5</td><td>5.5</td><td>5.5</td><td>1.5</td><td>7</td><td>7.5</td><td>7</td><td>0</td><td>9</td><td>9</td><td>9</td><td>2</td><td>12</td><td>11</td><td>12</td><td>5</td><td>17</td><td>14</td><td>10</td><td>21</td><td>16</td><td>14</td><td>20</td><td>25</td><td>31</td></tr>
+                    <tr><td>11</td><td>4.5</td><td>5.5</td><td>3.5</td><td>5.5</td><td>5.5</td><td>7.5</td><td>2</td><td>7.5</td><td>7</td><td>9</td><td>0</td><td>9</td><td>9</td><td>11</td><td>3</td><td>11</td><td>12</td><td>14</td><td>8</td><td>14</td><td>19</td><td>12</td><td>16</td><td>23</td><td>20</td><td>25</td><td>31</td></tr>
+                    <tr><td>12</td><td>4.5</td><td>5.5</td><td>5.5</td><td>3.5</td><td>5.5</td><td>7.5</td><td>7</td><td>1.5</td><td>7</td><td>9</td><td>9</td><td>0</td><td>9</td><td>11</td><td>12</td><td>2</td><td>12</td><td>14</td><td>17</td><td>5</td><td>19</td><td>21</td><td>7</td><td>23</td><td>11</td><td>16</td><td>22</td></tr>
+                    <tr><td>13</td><td>4.5</td><td>5.5</td><td>5.5</td><td>5.5</td><td>3.5</td><td>7.5</td><td>7</td><td>7.5</td><td>2</td><td>9</td><td>9</td><td>9</td><td>0</td><td>11</td><td>12</td><td>11</td><td>3</td><td>14</td><td>17</td><td>14</td><td>19</td><td>21</td><td>16</td><td>23</td><td>20</td><td>25</td><td>31</td></tr>
+                    <tr><td>14</td><td>6.5</td><td>5.5</td><td>7.5</td><td>7.5</td><td>7.5</td><td>3.5</td><td>9</td><td>9.5</td><td>9</td><td>2</td><td>11</td><td>11</td><td>11</td><td>0</td><td>14</td><td>13</td><td>14</td><td>3</td><td>19</td><td>16</td><td>8</td><td>23</td><td>18</td><td>12</td><td>22</td><td>27</td><td>33</td></tr>
+                    <tr><td>15</td><td>7.5</td><td>8.5</td><td>6.5</td><td>8.5</td><td>8.5</td><td>10.5</td><td>5</td><td>10.5</td><td>10</td><td>12</td><td>3</td><td>12</td><td>12</td><td>14</td><td>0</td><td>14</td><td>15</td><td>17</td><td>5</td><td>17</td><td>22</td><td>9</td><td>19</td><td>26</td><td>23</td><td>28</td><td>34</td></tr>
+                    <tr><td>16</td><td>6.5</td><td>7.5</td><td>7.5</td><td>5.5</td><td>7.5</td><td>9.5</td><td>9</td><td>3.5</td><td>9</td><td>11</td><td>11</td><td>2</td><td>11</td><td>13</td><td>14</td><td>0</td><td>14</td><td>16</td><td>19</td><td>3</td><td>21</td><td>23</td><td>5</td><td>25</td><td>9</td><td>14</td><td>20</td></tr>
+                    <tr><td>17</td><td>7.5</td><td>8.5</td><td>8.5</td><td>8.5</td><td>6.5</td><td>10.5</td><td>10</td><td>10.5</td><td>5</td><td>12</td><td>12</td><td>12</td><td>3</td><td>14</td><td>15</td><td>14</td><td>0</td><td>17</td><td>20</td><td>17</td><td>22</td><td>24</td><td>19</td><td>26</td><td>23</td><td>28</td><td>34</td></tr>
+                    <tr><td>18</td><td>9.5</td><td>8.5</td><td>10.5</td><td>10.5</td><td>10.5</td><td>6.5</td><td>12</td><td>12.5</td><td>12</td><td>5</td><td>14</td><td>14</td><td>14</td><td>3</td><td>17</td><td>16</td><td>17</td><td>0</td><td>22</td><td>19</td><td>5</td><td>26</td><td>21</td><td>9</td><td>25</td><td>30</td><td>36</td></tr>
+                    <tr><td>19</td><td>12.5</td><td>13.5</td><td>11.5</td><td>13.5</td><td>13.5</td><td>15.5</td><td>10</td><td>15.5</td><td>15</td><td>17</td><td>8</td><td>17</td><td>17</td><td>19</td><td>5</td><td>19</td><td>20</td><td>22</td><td>0</td><td>22</td><td>27</td><td>4</td><td>24</td><td>31</td><td>28</td><td>33</td><td>39</td></tr>
+                    <tr><td>20</td><td>9.5</td><td>10.5</td><td>10.5</td><td>8.5</td><td>10.5</td><td>12.5</td><td>12</td><td>6.5</td><td>12</td><td>14</td><td>14</td><td>5</td><td>14</td><td>16</td><td>17</td><td>3</td><td>17</td><td>19</td><td>22</td><td>0</td><td>24</td><td>26</td><td>2</td><td>28</td><td>6</td><td>11</td><td>17</td></tr>
+                    <tr><td>21</td><td>14.5</td><td>13.5</td><td>15.5</td><td>15.5</td><td>15.5</td><td>11.5</td><td>17</td><td>17.5</td><td>17</td><td>10</td><td>19</td><td>19</td><td>19</td><td>8</td><td>22</td><td>21</td><td>22</td><td>5</td><td>27</td><td>24</td><td>0</td><td>31</td><td>26</td><td>4</td><td>30</td><td>35</td><td>41</td></tr>
+                    <tr><td>22</td><td>16.5</td><td>17.5</td><td>15.5</td><td>17.5</td><td>17.5</td><td>19.5</td><td>14</td><td>19.5</td><td>19</td><td>21</td><td>12</td><td>21</td><td>21</td><td>23</td><td>9</td><td>23</td><td>24</td><td>26</td><td>4</td><td>26</td><td>31</td><td>0</td><td>28</td><td>35</td><td>32</td><td>37</td><td>43</td></tr>
+                    <tr><td>23</td><td>11.5</td><td>12.5</td><td>12.5</td><td>10.5</td><td>12.5</td><td>14.5</td><td>14</td><td>8.5</td><td>14</td><td>16</td><td>16</td><td>7</td><td>16</td><td>18</td><td>19</td><td>5</td><td>19</td><td>21</td><td>24</td><td>2</td><td>26</td><td>28</td><td>0</td><td>30</td><td>4</td><td>9</td><td>15</td></tr>
+                    <tr><td>24</td><td>18.5</td><td>17.5</td><td>19.5</td><td>19.5</td><td>19.5</td><td>15.5</td><td>21</td><td>21.5</td><td>21</td><td>14</td><td>23</td><td>23</td><td>23</td><td>12</td><td>26</td><td>25</td><td>26</td><td>9</td><td>31</td><td>28</td><td>4</td><td>35</td><td>30</td><td>0</td><td>34</td><td>39</td><td>45</td></tr>
+                    <tr><td>25</td><td>15.5</td><td>16.5</td><td>16.5</td><td>14.5</td><td>16.5</td><td>18.5</td><td>18</td><td>12.5</td><td>18</td><td>20</td><td>20</td><td>11</td><td>20</td><td>22</td><td>23</td><td>9</td><td>23</td><td>25</td><td>28</td><td>6</td><td>30</td><td>32</td><td>4</td><td>34</td><td>0</td><td>5</td><td>6</td></tr>
+                    <tr><td>26</td><td>20.5</td><td>21.5</td><td>21.5</td><td>19.5</td><td>21.5</td><td>23.5</td><td>23</td><td>17.5</td><td>23</td><td>25</td><td>25</td><td>16</td><td>25</td><td>27</td><td>28</td><td>14</td><td>28</td><td>30</td><td>33</td><td>11</td><td>35</td><td>37</td><td>9</td><td>39</td><td>5</td><td>0</td><td>6</td></tr>
+                    <tr><td>27</td><td>26.5</td><td>27.5</td><td>27.5</td><td>25.5</td><td>27.5</td><td>29.5</td><td>29</td><td>23.5</td><td>29</td><td>31</td><td>31</td><td>22</td><td>31</td><td>33</td><td>34</td><td>20</td><td>34</td><td>36</td><td>39</td><td>17</td><td>41</td><td>43</td><td>15</td><td>45</td><td>6</td><td>6</td><td>0</td></tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vandhya City Planning Committee. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
