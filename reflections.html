@@ -22,7 +22,6 @@
         </ul>
     </nav>
 
-
     <main class="reflections">
         <h1>DAA Lab Reflections</h1>
 
@@ -30,82 +29,368 @@
             <h2>Key Concepts in Algorithms</h2>
 
             <div class="reflection-item">
-                <h3>1. Time Complexity Analysis</h3>
-                <p>Understanding time complexity involves analyzing how an algorithm's performance changes as the input size grows. It is measured using Big-O, Big-Theta, and Big-Omega notations. Concepts like solving recurrence relations and applying the Master Theorem are integral to mastering this topic.</p>
-                <img src="placeholder-time-complexity.jpg" alt="Time Complexity Analysis Code" class="code-screenshot">
+                <h3>A. Time Complexity Analysis</h3>
+                <p>Time complexity analysis involves understanding how an algorithm's performance changes as input size grows. It uses Big-O, Big-Theta, and Big-Omega notations. Key challenges include understanding recurrence relations, solving them, and learning about different asymptotes used in algorithm design.</p>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230302113306/mypic.png" alt="Time Complexity" style="width: 500px; height: auto;">
             </div>
             <br>
             <div class="reflection-item">
-                <h3>2. Binary Search Tree (BST)</h3>
-                <p>A binary search tree is a hierarchical structure where each node has at most two children. It maintains ordered data, enabling efficient operations like search, insertion, and deletion. Its self-balancing variants, like AVL and Red-Black trees, ensure optimal performance.</p>
-                <img src="placeholder-bst.jpg" alt="Binary Search Tree Code" class="code-screenshot">
+                <h3>B. Binary Search Tree (BST)</h3>
+                <p>BSTs are hierarchical structures maintaining ordered data for efficient search, insertion, and deletion. Understanding BSTs was easier due to prior knowledge of data structures like linked lists, stacks, and queues.</p>
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221215114732/bst-21.png" alt="BST" style="width: 500px; height: auto;">
             </div>
             <br>
             <div class="reflection-item">
-                <h3>3. Depth-First Search (DFS) and Breadth-First Search (BFS)</h3>
-                <p>DFS explores as far as possible along a branch before backtracking, making it suitable for tasks like cycle detection. BFS explores all neighbors at the current depth before moving to the next, making it ideal for finding the shortest path in unweighted graphs.</p>
-                <img src="placeholder-dfs-bfs.jpg" alt="DFS and BFS Code" class="code-screenshot">
+                <h3>C. Depth-First Search (DFS) and Breadth-First Search (BFS)</h3>
+                <p>DFS and BFS are fundamental graph traversal algorithms. They were relatively easy to understand due to their straightforward nature and lexicographical order. DFS is suitable for tasks like cycle detection, while BFS is ideal for finding the shortest path in unweighted graphs.</p>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240219134945/bfs-vs-dfs-(1).png" alt="BFS DFS" style="width: 500px; height: auto;">
             </div>
             <br>
             <div class="reflection-item">
-                <h3>4. Heap</h3>
-                <p>Heaps are specialized tree-based data structures used to implement priority queues. Min-heaps and max-heaps maintain specific order properties, and heap operations like insertion and deletion rely on the heapification process to maintain this order.</p>
-                <img src="placeholder-heap.jpg" alt="Heap Code" class="code-screenshot">
+                <h3>D. Heap</h3>
+                <p>Heaps are specialized tree-based structures used for priority queues. Understanding concepts like heapification and parental dominance was initially challenging. Min/Max heaps maintain specific order properties crucial for various applications.</p>
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221220165711/MinHeapAndMaxHeap1.png" alt="" style="width: 500px; height: auto;">
             </div>
             <br>
             <div class="reflection-item">
-                <h3>5. Sorting Algorithms</h3>
-                <p>Sorting algorithms organize data in a specific order. Simple algorithms like bubble sort and insertion sort are easier to understand but inefficient. Advanced algorithms like merge sort (divide-and-conquer) and quicksort (pivoting) are faster for larger datasets.</p>
-                <img src="placeholder-sorting.jpg" alt="Sorting Algorithms Code" class="code-screenshot">
+                <h3>E. Sorting Algorithms</h3>
+                <p>Sorting algorithms organize data in specific orders. Simple algorithms like bubble sort and insertion sort were easier to understand due to easy visualization. More advanced algorithms like quicksort and heapsort were challenging due to concepts like pivoting and parental dominance.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*bPpvELo9_QqQsDz7CSbwXQ.gif" alt="sorting algo" style="width: 600px; height: auto;">
             </div>
             <br>
             <div class="reflection-item">
-                <h3>6. Pattern Searching</h3>
-                <p>Pattern searching involves finding occurrences of a pattern in a text. Algorithms like KMP use preprocessing to avoid redundant comparisons, while Boyer-Moore employs heuristics like bad character and good suffix for efficient searching.</p>
-                <img src="placeholder-pattern-search.jpg" alt="Pattern Searching Code" class="code-screenshot">
+                <h3>F. Pattern Searching</h3>
+                <p>Pattern searching involves finding occurrences of patterns in text. Algorithms like Brute Force String Search (BFSS) and KMP were logically straightforward, while Boyer-Moore was more complex due to its use of multiple preprocessing tables.</p>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220809155713/image.png" alt="Pattern Searching" style="width: 500px; height: auto;">
             </div>
             <br>
             <div class="reflection-item">
-                <h3>7. Graph Algorithms</h3>
-                <p>Graph algorithms like Kruskal's and Prim's are used to find minimum spanning trees. Dijkstra's and Bellman-Ford help find shortest paths, while Floyd-Warshall computes all-pairs shortest paths. These are foundational for network analysis and optimization tasks.</p>
-                <img src="placeholder-graph-algorithms.jpg" alt="Graph Algorithms Code" class="code-screenshot">
+                <h3>G. Graph Algorithms</h3>
+                <p>Graph algorithms like Dijkstra's, Bellman-Ford, and Floyd-Warshall were relatively easy to understand due to their straightforward procedures. Kruskal's algorithm was more challenging due to its similarity with sorting algorithms and use of the union-find data structure.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:2000/1*0DEK_ouEZZz4_MMdhKE_Wg.png" alt="Graph algos" style="width: 600px; height: auto;">
             </div>
         </section>
-
+        <br>
+        <section>      
+            <section class="code-snippets">
+                <h2>Code Snippets</h2>
+                    <b>A. Binary Search Tree (BST) Operations</b>
+                    <div class="code-block">
+                        <pre><code>
+        TREE* BST::ins(TREE *root, int da) {
+            TREE *n = (TREE)malloc(sizeof(TREE));
+            if (n == NULL) {
+                cout << "Memory allocation failed" << endl;
+                return root;
+            }
+            n->d = da;
+            n->left = NULL;
+            n->right = NULL;
+            if (root == NULL) {
+                root = n;
+                cout << "Root node inserted into tree" << endl;
+                return root;
+            }
+            TREE *curr = root;
+            TREE *par = NULL;
+            while (curr != NULL) {
+                par = curr;
+                if (n->d < curr->d)
+                    curr = curr->left;
+                else
+                    curr = curr->right;
+            }
+            if (n->d < par->d)
+                par->left = n;
+            else
+                par->right = n;
+            cout << "Node inserted" << endl;
+            return root;
+        }
+        
+        TREE* BST::del(TREE *root, int da) {
+            TREE *curr = root;
+            TREE *par = NULL;
+            TREE *suc = NULL;
+            TREE *c = NULL;
+            if (root == NULL) {
+                cout << "Tree is empty" << endl;
+                return root;
+            }
+            while (curr != NULL && curr->d != da) {
+                par = curr;
+                if (da < curr->d)
+                    curr = curr->left;
+                else
+                    curr = curr->right;
+            }
+            if (curr == NULL) {
+                cout << "Item not found" << endl;
+                return root;
+            }
+            if (curr->left == NULL)
+                c = curr->right;
+            else if (curr->right == NULL)
+                c = curr->left;
+            else {
+                suc = curr->right;
+                while (suc->left != NULL) {
+                    suc = suc->left;
+                }
+                suc->left = curr->left;
+                c = curr->right;
+            }
+            if (par == NULL) {
+                free(curr);
+                return c;
+            }
+            if (curr == par->left)
+                par->left = c;
+            else
+                par->right = c;
+            free(curr);
+            return root;
+        }
+        
+        // Other BST methods (ino, preo, posto, coun, maxi, mini, sea) ...
+                    </code></pre>
+                </div>
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>C. Depth-First Search (DFS) and Breadth-First Search (BFS)</h3>
+                <div class="code-block">
+                    <pre><code>
+        void dfs(int m[10][10], int v, int source) {
+            visited[source] = 1;
+            for (int i = 0; i < v; i++) {
+                if (m[source][i] == 1 && visited[i] == 0) {
+                    cout << i << "\t";
+                    dfs(m, v, i);
+                }
+            }
+        }
+        
+        void bfs(int m[10][10], int v, int source) {
+            int queue[20];
+            int front = 0, rear = 0, u, i;
+            int visited[10];
+            for (i = 0; i < v; i++)
+                visited[i] = 0;
+            queue[rear] = source;
+            visited[source] = 1;
+            cout << "The BFS Traversal is... \n";
+            while (front <= rear) {
+                u = queue[front];
+                cout << u << "\t";
+                front++;
+                for (i = 0; i < v; i++) {
+                    if (m[u][i] == 1 && visited[i] == 0) {
+                        visited[i] = 1;
+                        rear++;
+                        queue[rear] = i;
+                    }
+                }
+            }
+        }
+                    </code></pre>
+                </div>
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>D. Max Heap</h3>
+                <div class="code-block">
+                    <pre><code>
+        vector<int> max_heap(vector<int> H) {
+            int i, k, v, j, n;
+            n = H.size() - 1;
+            bool heap;
+            for (int i = n / 2; i >= 1; i--) {
+                k = i;
+                v = H[k];
+                heap = false;
+                while (!heap && 2 * k <= n) {
+                    j = 2 * k;
+                    if (j < n) {
+                        if (H[j] < H[j + 1])
+                            j = j + 1;
+                    }
+                    if (v >= H[j])
+                        heap = true;
+                    else {
+                        H[k] = H[j];
+                        k = j;
+                    }
+                }
+                H[k] = v;
+            }
+            return H;
+        }
+                    </code></pre>
+                </div>
+            </div>
+            <br>
+            <div class="reflection-item">
+                <h3>E. Sorting Algorithms</h3>
+                <div class="code-block">
+                    <pre><code>
+        void sorts::bubblesort(int a[n]) {
+            int i = 0, j = 0, c;
+            for (i = 0; i < n - 1; i++) {
+                for (j = 0; j < n - i - 1; j++) {
+                    if (a[j] > a[j + 1]) {
+                        c = a[j];
+                        a[j] = a[j + 1];
+                        a[j + 1] = c;
+                    }
+                }
+            }
+        }
+        
+        void sorts::selectionsort(int a[n]) {
+            int m = 0, i = 0, j = 0, c;
+            for (i = 0; i < n - 1; i++) {
+                m = i;
+                for (j = i + 1; j < n; j++) {
+                    if (a[m] > a[j]) {
+                        m = j;
+                    }
+                }
+                c = a[i];
+                a[i] = a[m];
+                a[m] = c;
+            }
+        }
+        
+        void sorts::insertionsort(int a[n]) {
+            int i = 0, j = 0, v = 0;
+            for (i = 1; i < n; i++) {
+                v = a[i];
+                j = i - 1;
+                while (j >= 0 && a[j] > v) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+                a[j + 1] = v;
+            }
+        }
+                    </code></pre>
+                </div>
+            </div>
+        
+            <div class="reflection-item">
+                <h3>F. Brute Force String Search (BFSS)</h3>
+                <div class="code-block">
+                    <pre><code>
+        int BFSS(string& T, string& P) {
+            int n = T.size();
+            int m = P.size();
+            int c = 0;
+            for (int i = 0; i <= n - m; i++) {
+                int j = 0;
+                c++;
+                while (j < m && P[j] == T[i + j]) {
+                    j++;
+                }
+                if (j == m) {
+                    cout << "comparisons " << c << endl;
+                    return i;
+                }
+            }
+            cout << "comparisons " << c << endl;
+            return -1;
+        }
+                    </code></pre>
+                </div>
+            </div>
+        
+            <div class="reflection-item">
+                <h3>G. Graph Algorithms (Dijkstra's and Kruskal's)</h3>
+                <div class="code-block">
+                    <pre><code>
+        void dijkstra(int n, vector<vector<pair<int,int>>>& graph, int src) {
+            vector<int> dist(n, INT_MAX);
+            dist[src] = 0;
+            priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
+            pq.push({0, src});
+            while (!pq.empty()) {
+                int u = pq.top().second;
+                pq.pop();
+                for (int i = 0; i < graph[u].size(); i++) {
+                    int v = graph[u][i].first;
+                    int weight = graph[u][i].second;
+                    if (dist[u] + weight < dist[v]) {
+                        dist[v] = dist[u] + weight;
+                        pq.push({dist[v], v});
+                    }
+                }
+            }
+        }
+        
+        void kruskal(int n, vector<Edge>& edges) {
+            sort(edges.begin(), edges.end(), compareEdges);
+            vector<int> parent(n), rank(n, 0);
+            for (int i = 0; i < n; i++) {
+                parent[i] = i;
+            }
+            vector<Edge> mst;
+            int mstWeight = 0;
+            for (int i = 0; i < edges.size(); i++) {
+                if (findParent(edges[i].src, parent) != findParent(edges[i].dest, parent)) {
+                    mst.push_back(edges[i]);
+                    mstWeight += edges[i].weight;
+                    unionNodes(edges[i].src, edges[i].dest, parent, rank);
+                }
+            }
+            cout << "Edges in the Minimum Spanning Tree:" << endl;
+            for (int i = 0; i < mst.size(); i++) {
+                cout << mst[i].src << " -> " << mst[i].dest << " = " << mst[i].weight << endl;
+            }
+            cout << "Total weight of MST: " << mstWeight << endl;
+        }
+                    </code></pre>
+                </div>
+            </div>
+        </section>
         <section>
             <h2>Challenges in Learning/Understanding</h2>
             <ul>
-                <li><strong>1. Time Complexity Analysis:</strong> Difficulties included solving recurrence relations and applying asymptotic notations effectively.</li>
-                <li><strong>2. Binary Search Tree:</strong> Easier due to prior knowledge of linked lists and other data structures.</li>
-                <li><strong>3. DFS and BFS:</strong> Straightforward but required careful handling of recursion stacks (DFS) and queues (BFS).</li>
-                <li><strong>4. Heap:</strong> Concepts like heapification and parental dominance were challenging initially.</li>
-                <li><strong>5. Sorting Algorithms:</strong> Visualization helped with basic sorts; advanced algorithms required more effort to understand.</li>
-                <li><strong>6. Pattern Searching:</strong> Algorithms like Boyer-Moore were harder due to the need for additional preprocessing steps.</li>
-                <li><strong>7. Graph Algorithms:</strong> Kruskal's was confusing initially due to its reliance on sorting and union-find.</li>
+                <li><strong>Time Complexity Analysis:</strong> Understanding recurrence relations and asymptotic notations was challenging.</li>
+                <li><strong>Binary Search Tree:</strong> Relatively easy due to prior knowledge of basic data structures.</li>
+                <li><strong>DFS and BFS:</strong> Straightforward to understand, but required careful implementation of recursion stacks and queues.</li>
+                <li><strong>Heap:</strong> Concepts like heapification and parental dominance were initially difficult to grasp.</li>
+                <li><strong>Sorting Algorithms:</strong> Basic sorts were easy to visualize, but advanced algorithms like quicksort and heapsort required more effort to understand.</li>
+                <li><strong>Pattern Searching:</strong> Boyer-Moore algorithm was more complex due to its multiple preprocessing steps.</li>
+                <li><strong>Graph Algorithms:</strong> Most were straightforward, with Kruskal's algorithm being more challenging due to its use of union-find data structure.</li>
             </ul>
         </section>
 
         <section>
             <h2>Challenges in Correlating with Real-World Applications</h2>
             <ul>
-                <li><strong>1. Time Complexity Analysis:</strong> Once understood, its role in evaluating software performance became clear.</li>
-                <li><strong>2. Binary Search Tree:</strong> Applications in database indexing and search operations were logical and easy to grasp.</li>
-                <li><strong>3. DFS and BFS:</strong> Harder to visualize in real-world networks compared to simple graph representations.</li>
-                <li><strong>4. Heap:</strong> Its role in priority queues and scheduling systems highlighted its practical importance.</li>
-                <li><strong>5. Sorting Algorithms:</strong> Ubiquitous in software systems, from data organization to UI interactions.</li>
-                <li><strong>6. Pattern Searching:</strong> Essential in text editors, search engines, and computational biology.</li>
-                <li><strong>7. Graph Algorithms:</strong> Applications in navigation systems, network design, and social network analysis were evident.</li>
+                <li><strong>Time Complexity Analysis:</strong> Once understood, it was easy to correlate with real-world applications like financial markets and healthcare analysis.</li>
+                <li><strong>Binary Search Tree:</strong> Applications in database indexing and searching were easy to understand.</li>
+                <li><strong>DFS and BFS:</strong> Harder to visualize in real-world networks compared to simple graph representations.</li>
+                <li><strong>Heap:</strong> Understanding its use in priority queues and sorting applications became clear after grasping the concept of parental dominance.</li>
+                <li><strong>Sorting Algorithms:</strong> Ubiquitous in software systems, from smartphones to TVs, making real-world correlation straightforward.</li>
+                <li><strong>Pattern Searching:</strong> Easy to correlate with everyday applications like search engines and text editors.</li>
+                <li><strong>Graph Algorithms:</strong> Applications in calculating minimum spanning trees and shortest paths were easy to understand and correlate with real-world scenarios.</li>
             </ul>
         </section>
 
         <section>
-            <h2>How to Determine the Most Efficient Approach</h2>
+            <h2>Determining the Most Efficient Approach</h2>
             <ul>
-                <li>1. Analyze input size, constraints, and problem requirements.</li>
-                <li>2. Choose appropriate data structures based on problem needs (e.g., heaps for priority tasks).</li>
-                <li>3. Select algorithms with optimal time and space complexity for the given scenario.</li>
-                <li>4. Consider problem characteristics, such as graph density or text repetitiveness.</li>
-                <li>5. Iteratively optimize the solution by testing on edge cases and refining implementation.</li>
+                <li>Understand the input size and how the algorithm grows.</li>
+                <li>Consider the time-space trade-off for the specific problem.</li>
+                <li>Choose appropriate data structures based on the problem requirements (e.g., BSTs for ordered data with dynamic insertions).</li>
+                <li>Select algorithms based on specific problem characteristics:</li>
+                <ul>
+                    <li>Sorting: Consider data size and initial order (e.g., insertion sort for almost sorted data, quicksort for large datasets)</li>
+                    <li>Pattern Searching: Choose based on text size and pattern characteristics (e.g., KMP for repetitive patterns)</li>
+                    <li>Graph Algorithms: Select based on graph properties (e.g., Dijkstra's for non-negative weights, Bellman-Ford for graphs with negative weights)</li>
+                </ul>
+                <li>Implement and test the chosen approach, refining as necessary based on performance metrics.</li>
             </ul>
         </section>
     </main>
@@ -120,4 +405,3 @@
     </script>
 </body>
 </html>
-
