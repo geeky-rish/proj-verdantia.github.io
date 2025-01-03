@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Development Goals - Vandhya City Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .sdg-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .sdg-section {
+            background-color: var(--bg-secondary);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sdg-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .sdg-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+        }
+        
+        .sdg-title {
+            color: var(--accent);
+            margin: 0;
+        }
+        
+        .sdg-description {
+            margin-bottom: 1rem;
+        }
+        
+        .sdg-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .sdg-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .sdg-list li::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 0.5rem;
+            background-color: var(--accent);
+            border-radius: 50%;
+        }
+        
+        @media (max-width: 768px) {
+            .sdg-container {
+                padding: 1rem;
+            }
+            
+            .sdg-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="budget.html">Budget</a></li>
+            <li><a href="blueprint.html">City Blueprint</a></li>
+            <li><a href="technical_aspects.html">Technical Aspects</a></li>
+            <li><a href="sdgs_addressed.html">SDGs</a></li>
+        </ul>
+    </nav>
+
+    <main class="sdg-container">
+        <h1>Sustainable Development Goals</h1>
+        <p>Driving progress through innovation, sustainable communities, and climate action.</p>
+
+        <section class="sdg-section">
+            <div class="sdg-header">
+                <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-09.jpg" alt="SDG 9 Icon" class="sdg-icon">
+                <h2 class="sdg-title">SDG 9: Industry, Innovation, and Infrastructure</h2>
+            </div>
+            <p class="sdg-description">Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation. SDG 9 focuses on creating strong industries while ensuring minimal environmental impact and inclusive growth.</p>
+            <ul class="sdg-list">
+                <li>Promote sustainable industrialization.</li>
+                <li>Encourage research and innovation.</li>
+                <li>Develop reliable infrastructure.</li>
+            </ul>
+        </section>
+
+        <section class="sdg-section">
+            <div class="sdg-header">
+                <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-11.jpg" alt="SDG 11 Icon" class="sdg-icon">
+                <h2 class="sdg-title">SDG 11: Sustainable Cities and Communities</h2>
+            </div>
+            <p class="sdg-description">Make cities and human settlements inclusive, safe, resilient, and sustainable. SDG 11 envisions a future where urbanization aligns with environmental sustainability and quality of life.</p>
+            <ul class="sdg-list">
+                <li>Affordable housing for all.</li>
+                <li>Efficient public transport systems.</li>
+                <li>Reducing the environmental impact of cities.</li>
+            </ul>
+        </section>
+
+        <section class="sdg-section">
+            <div class="sdg-header">
+                <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-13.jpg" alt="SDG 13 Icon" class="sdg-icon">
+                <h2 class="sdg-title">SDG 13: Climate Action</h2>
+            </div>
+            <p class="sdg-description">Take urgent action to combat climate change and its impacts. SDG 13 calls for strengthening resilience and adaptive capacity to climate-related hazards and fostering low-carbon economies.</p>
+            <ul class="sdg-list">
+                <li>Invest in renewable energy projects.</li>
+                <li>Promote sustainable agricultural practices.</li>
+                <li>Encourage climate-resilient infrastructure.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Verdantia City Planning Committee. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
+
